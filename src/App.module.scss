@@ -1,0 +1,46 @@
+@import 'const/vars';
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.headerContainer {
+  height: 64px;
+  background-color: $color_prime;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.24);
+
+}
+
+.listContainer {
+  padding: 0 62px;
+  display: flex;
+  height: 100%;
+}
+
+.list__item {
+  padding: 0 30px;
+  color: $color_def;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.list__item_active {
+  opacity: 1;
+  background-color: $color_prive_active;
+}
+
+.contentContainer {
+  padding: 48px 62px 50px;
+
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+}
