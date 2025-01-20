@@ -37,9 +37,7 @@ const fetchMoreCats = createAsyncThunk(
         }
 
         const searchParams = new URLSearchParams()
-        searchParams.set('limit', '30')
-        searchParams.set('page', '1')
-
+        searchParams.set('limit', '50')
 
         const res = await fetch(`https://api.thecatapi.com/v1/images/search?${searchParams}`, options)
         let result = await res.json()

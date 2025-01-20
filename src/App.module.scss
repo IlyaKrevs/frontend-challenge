@@ -5,8 +5,6 @@
   flex-direction: column;
 }
 
-
-
 .headerContainer {
   height: 64px;
   background-color: $color_prime;
@@ -18,6 +16,10 @@
   padding: 0 62px;
   display: flex;
   height: 100%;
+
+  @media (max-width: 340px) {
+    padding: 0 20px;
+  }
 }
 
 .list__item {
@@ -43,4 +45,8 @@
   display: flex;
   gap: 48px;
   flex-wrap: wrap;
+
+  @media (max-width: 340px) {
+    padding: 0 20px;
+  }
 }
