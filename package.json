@@ -1,6 +1,7 @@
 {
   "name": "frontend-challenge",
   "version": "0.1.0",
+  "homepage": "https://IlyaKrevs.github.io/frontend-challenge",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.0",
@@ -15,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -37,6 +40,7 @@
   },
   "devDependencies": {
     "@types/react": "^19.0.7",
-    "@types/react-dom": "^19.0.3"
+    "@types/react-dom": "^19.0.3",
+    "gh-pages": "^6.3.0"
   }
 }
